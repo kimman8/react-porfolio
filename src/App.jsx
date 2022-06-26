@@ -8,10 +8,16 @@ import Portfolio from './components/Portfolio/Portfolio'
 import Testimonials from './components/Testimonials/Testimonials'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
+import LoginForm from './LoginForm'
+import Solution from './Solution'
+import Name from './Name'
 
 const App = () => {
   return (
     <>
+    {/* <Name/>
+    <Solution/>
+        <LoginForm/> */}
         <Header/>
         <Nav/>
         <About/>
