@@ -1,9 +1,8 @@
 import React, { Fragment, useRef, useState, useEffect } from "react";
 
-function Solution() {
+function Timer() {
 	const [timerMinutes, setTimerMinutes] = useState(0);
 	const [timerSeconds, setTimerSeconds] = useState(0);
-	let countdown;
 	let interval = useRef();
 	const [values, setValues] = useState({
 		ourMinutes: 0,
@@ -11,8 +10,6 @@ function Solution() {
 	});
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		// console.log(values);
-		// onSubmit(values);
 		setTimerMinutes(values.ourMinutes);
 		setTimerSeconds(values.ourSeconds);
 	};
@@ -42,6 +39,7 @@ function Solution() {
 		interval = setInterval(() => {
 			const distance = ourTime - now;
 			const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			console.log(minutes);
 			// const minutes = Math.floor(distance / 60);
 			const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 			// const seconds = distance % 60;
@@ -101,4 +99,4 @@ function Solution() {
 		</Fragment>
 	);
 }
-export default Solution;
+export default Timer;

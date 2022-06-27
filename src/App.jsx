@@ -9,7 +9,7 @@ import Testimonials from './components/Testimonials/Testimonials'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
 import LoginForm from './LoginForm'
-import Solution from './Solution'
+import Timer from './Timer'
 import Name from './Name'
 
 const App = () => {
@@ -18,6 +18,7 @@ const App = () => {
     {/* <Name/>
     <Solution/>
         <LoginForm/> */}
+        <Timer/>
         <Header/>
         <Nav/>
         <About/>
