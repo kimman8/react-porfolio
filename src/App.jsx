@@ -8,17 +8,13 @@ import Portfolio from './components/Portfolio/Portfolio'
 import Testimonials from './components/Testimonials/Testimonials'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
-import LoginForm from './LoginForm'
-import Timer from './Timer'
+import Timer1 from './Timer1'
 import Name from './Name'
 
 const App = () => {
   return (
     <>
-    {/* <Name/>
-    <Solution/>
-        <LoginForm/> */}
-        <Timer/>
+        {/* <Timer1/> */}
         <Header/>
         <Nav/>
         <About/>
